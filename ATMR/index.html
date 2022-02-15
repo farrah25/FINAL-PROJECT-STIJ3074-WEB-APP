@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<title>Amirul Thai & Malay Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+    
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+    /* Full height image header */
+    
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("../img/photo.jpg");
+        min-height: 100%;
+    }
+    
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">AMIRUL THAI & MALAY RESTAURANT</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#food" class="w3-bar-item w3-button">FOODIE</a>
+                <a href="#drink" class="w3-bar-item w3-button">DRINKS</a>
+                <a href="#gallery" class="w3-bar-item w3-button">OUR GALLERY</a>
+                <a href="#contact" class="w3-bar-item w3-button">CONTACT US</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">FOODIE</a>
+        <a href="#drink" onclick="w3_close()" class="w3-bar-item w3-button">DRINKS</a>
+        <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">OUR GALLERY</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-black" style="padding:64px">
+            <span class="w3-jumbo">Amirul Thai & Malay Restaurant</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-hide-small">Start something that matters</span><br>
+            <span class="w3-large">One dinner that combines Thai and Malay tastes. It is our pleasure to serve you!</span>
+            <p><a href="#food" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">ORDER NOW</a></p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3><span class="w3-tag w3-wide">ABOUT THE RESTAURANT</span></h3>
+                <p align="justify">The Amirul Thai & Malay Restaurant was founded at Kuala Terengganu by Mr. Amirul Aiman Bin Md Nasir. He started together with his lovely wife Norsuziana Binti Sakri. This restaurant has been operating since 2019 which means 2 years already.
+                    This restaurant features a variety of daily menus with a focus on Malay and Thai cuisine. Among the Malay cuisine menu is fried rice, chicken rice, fries, keropok lekor, colek buah and many more. For the Thai menu, our restaurant have
+                    many menus which is mee celup Thai, somtam mangga, pulut mangga, nasi air berlauk and so on. The restaurant also features a variety of drinks including apple juice, orange juice, watermelon juice, milo ice, teh ice, hot drinks and
+                    many more. When you visit the restaurant, don't forget to check the menus promotions that our restaurant provide to you!</p>
+                <p align="justify"><strong>Opening hours:</strong> every Saturday until Tuesday and will be closed Wednesday and operate from 01:00PM until 12:00AM.</span>
+                </p>
+                <p align="justify"><strong>Address:</strong> Lot 854, Jalan Kuala Berang Kampung Merbau Patah (Amirul Thai & Malay Restaurant) Kuala Terengganu, 20050 Terengganu.</p>
+                <p><a href="#gallery" class="w3-button w3-black">View More</a></p>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="../img/amirul.jpg" alt="Buildings" width="700" height="394">
+            </div>
+        </div>
+    </div>
+
+    <!-- Food Section -->
+    <div class="w3-container" style="padding:80px 16px" id="food">
+        <h3 class="w3-center"><span class="w3-tag w3-wide">FOODIE</span></h3>
+        <p class="w3-center w3-large">Choose your favourite food here.</p>
+        <div class="w3-row-padding" style="margin-top:40px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/1a.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Nasi Goreng</h3>
+                        <p class="w3-opacity">RM5.00</p>
+                        <p>Chicken breast, sweet soy sauce, white rice, anchovies and fried egg, fish source, cucumber, and salad.</p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/2.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Nasi Kerabu</h3>
+                        <p class="w3-opacity">RM6.00</p>
+                        <p>Salted egg, blue colour rice, blue pea flower, snapper, bean, crispy chicken or fried fish and spicy sauce (budu).</p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/3.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>French Fries</h3>
+                        <p class="w3-opacity">RM4.00</p>
+                        <p>Homemade french fries are potatoes that cut into sticks and deep fried until golden brown, sprinkled with seasonings.
+                        </p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/4.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Somtam Campur</h3>
+                        <p class="w3-opacity">RM7.00</p>
+                        <p>Mixed with peanut, brown sugar, fish sauce, lime, water spinach, young papaya, mango, pepper, dried shrimp.
+                        </p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drink Section -->
+    <div class="w3-container" style="padding:80px 16px" id="drink">
+        <h3 class="w3-center"><span class="w3-tag w3-wide">DRINKS</span></h3>
+        <p class="w3-center w3-large">Choose your favourite drink here.</p>
+        <div class="w3-row-padding" style="margin-top:40px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/6.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Honey Dew Juice</h3>
+                        <p class="w3-opacity">RM5.00</p>
+                        <p>Blended with honey dew and ice.</p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/7.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Fresh Orange Juice</h3>
+                        <p class="w3-opacity">RM5.00</p>
+                        <p>Blended with orange and ice.</p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/8.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Pineapple Juice</h3>
+                        <p class="w3-opacity">RM5.00</p>
+                        <p>Blended with pineapple and ice.</p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="../img/9.png" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Watermelon Juice</h3>
+                        <p class="w3-opacity">RM5.00</p>
+                        <p>Blended with watermelon and ice.</p>
+                        <p><button class="w3-button w3-blue w3-block">Buy Now</button></p>
+                        <p><button class="w3-button w3-light-grey w3-block w3-center">See More</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="w3-container" style="padding:80px 16px" id="gallery">
+        <h3 class="w3-center"><span class="w3-tag w3-wide">OUR GALLERY</span></h3>
+        <p class="w3-center w3-large">Customer always be our priorities and happiness.</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="../img/10.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="../img/11.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="../img/12.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="../img/13.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="../img/14.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="../img/15.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="../img/16.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="../img/tomyamseafood.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:80px 16px" id="contact">
+        <h3 class="w3-center"><span class="w3-tag w3-wide">CONTACT US</span></h3>
+        <p class="w3-center w3-large">Let's get in touch. If you have question about our restaurant, we'd love to hear from you.</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Lot 854, Jalan Kuala Berang Kampung Merbau Patah (Amirul Thai & Malay Restaurant) Kuala Terengganu, 20050 Terengganu.</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (603) 555-0980</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: amirulthaimalay@gmail.com</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+                </p>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        <div class="col-md-6">
+            <p class="mb-0">© 2021 copyright all right reserved | Designed by <a class="text-white">Amirul Thai & Malay Restaurant</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
